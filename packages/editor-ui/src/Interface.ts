@@ -1767,7 +1767,8 @@ export type UTMCampaign =
 	| 'open'
 	| 'upgrade-users'
 	| 'upgrade-variables'
-	| 'upgrade-community-nodes';
+	| 'upgrade-community-nodes'
+	| 'upgrade-advanced-permissions';
 
 export type N8nBanners = {
 	[key in BannerName]: {
