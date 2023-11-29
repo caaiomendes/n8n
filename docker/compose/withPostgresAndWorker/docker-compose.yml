@@ -24,10 +24,8 @@ x-shared: &shared
   volumes:
     - n8n_storage:/home/node/.n8n
   depends_on:
-    redis:
-      condition: service_healthy
-    postgres:
-      condition: service_healthy
+    - redis
+    - postgres
 
 services:
   postgres:
